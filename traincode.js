@@ -1,9 +1,13 @@
-// MTA, a more general solution (failed attempt)
+// pathfinder
 
 // assumption 1: trains are always available
 // assumption 2: distance between any two adjacent stations are uniform (not a big deal)
 // assumption 3: there is at most 1 intermediate train line which
 // connects origin station train line and destination station train line
+
+// Saturday 28th April -> Need to work on junctionPath() method
+// Resolve: storing history of distance travelled up to a current node, when considering every possible future node
+// nested object?
 
 mta = {
     lines: {
