@@ -7,7 +7,18 @@
 
 // Saturday 28th April -> Need to work on junctionPath() method
 // Resolve: storing history of distance travelled up to a current node, when considering every possible future node
-// nested object?
+// // nested object?
+// const testhistory = [
+//     {
+//         stations: [a,b,c],
+//         distance: 3
+//     },
+//     {
+//         stations: [a,b,e],
+//         distance: 4
+//     }
+// ]
+
 
 mta = {
     lines: {
@@ -136,7 +147,7 @@ mta = {
     // logs travel
     travelLogArray: [],
     travelLogObject: {},
-    travelDistance = 0,
+    travelDistance: 0,
 
     // describes shortest path from a station (junction or non-junction) to destination junction
     junctionPath: function(currentStation,finalJunction){
