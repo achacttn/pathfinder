@@ -41,6 +41,13 @@ const nodeFinder = ( anyTrainSystem ) => {
             nodeObject[anyTrainSystem[trainLine][i]].push(trainLine);
         }
     }
+
+    // for( trainStation in nodeObject ){
+    //     if( nodeObject[trainStation].length ===1 ){
+    //         nodeObject[trainStation].delete;
+    //     }
+    // }
+
     return nodeObject;
 }
 
